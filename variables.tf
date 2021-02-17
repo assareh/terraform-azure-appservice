@@ -3,7 +3,7 @@
 #############################
 
 
-# application name 
+# application name
 variable "app_name" {
   type        = string
   description = "This variable defines the application name used to build resources"
