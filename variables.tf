@@ -19,14 +19,14 @@ variable "environment" {
 variable "location" {
   type        = string
   description = "Azure region where the resource group will be created"
-  default     = "AustraliaEast"
+  default     = "West US 2"
 }
 
 # azure region shortname
 variable "region" {
   type        = string
   description = "Azure region where the resource group will be created"
-  default     = "AusEast"
+  default     = "WestUS2"
 }
 
 # owner
@@ -46,4 +46,9 @@ variable "https_only" {
   type        = string
   description = "Whether to allow access via HTTP or not"
   default     = true
+}
+
+variable "appservicedocker" {
+  description = "The docker image to run as an app service"
+  default     = "nginx"
 }

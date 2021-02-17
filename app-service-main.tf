@@ -43,7 +43,8 @@ resource "azurerm_app_service" "app-service" {
   https_only          = var.https_only
 
   site_config {
-    linux_fx_version = "DOTNETCORE|3.1"
+    app_command_line = ""
+    linux_fx_version = "DOCKER|${var.appservicedocker}"
   }
 
   tags = {
